@@ -13,3 +13,7 @@
 - [x] Final single-file smoke check passed with networking disabled: opportunity creation and reload persistence, credit review, zero page errors and no mobile horizontal overflow. The delivered HTML embeds code, styles, fonts and logo in one file.
 
 - [x] User-requested brand correction: replace creative pine/sage with verified official-site navy/white for Aircraft and amber/charcoal for Asset, including the original subsidiary logo. Match the video to the corrected app.
+
+- [ ] Save the corrected full source and ready-to-open static build in the user's personal GitHub, using the confirmed managed repository transfer.
+- [x] Preserve repository-subpath navigation and clearly disable backend-only AI in the static client build; include the completed South African narrated explainer.
+- [ ] Verify the resulting GitHub link and distinguish private repository access from any separately approved public client preview.
