@@ -168,7 +168,14 @@ function vitePluginPublicPlatformConfig(): Plugin {
   };
 }
 
-const plugins = [vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector()];
+const offlineAssetsPlugin: Plugin = {
+  name: 'afc-offline-assets',
+  generateBundle(_options, bundle) {
+    const paths = Object.keys(bundle).filter(file => !file.startsWith('api/') && file !== 'index.html').map(file => '/' + file);
+    this.emitFile({ type: 'asset', fileName: 'offline-assets.json', source: JSON.stringify(paths) });
+  },
+};
+const plugins = [vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector(), offlineAssetsPlugin];
 
 export default defineConfig({
   plugins,

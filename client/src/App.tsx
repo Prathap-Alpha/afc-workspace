@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
 function Router() {
+  if (window.location.protocol === 'file:') return <Home />;
   // make sure to consider if you need authentication for certain routes
   return (
     <Switch>

@@ -1,4 +1,5 @@
 import { COOKIE_NAME } from "@shared/const";
+import { afcRouter } from "./afc";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
@@ -23,6 +24,7 @@ export const appRouter = router({
   //     db.getUserTodos(ctx.user.id)
   //   ),
   // }),
+  afc: afcRouter,
 });
 
 export type AppRouter = typeof appRouter;
