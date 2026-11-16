@@ -23,13 +23,13 @@ const palette = {
   silver: 0xb8c1bd,
   silverDark: 0x687875,
   graphite: 0x1b2a2a,
-  teal: 0x277d79,
-  tealDark: 0x104d50,
+  teal: 0x010c26,
+  tealDark: 0x333c4e,
   copper: 0xb87552,
-  glass: 0x173e45,
-  glassHighlight: 0x6eaaa5,
+  glass: 0x17233b,
+  glassHighlight: 0x91a5c4,
   tyre: 0x101817,
-  shadow: 0x182d2a,
+  shadow: 0x010c26,
 };
 
 const standard = (color: number, roughness = 0.3, metalness = 0.5) =>
@@ -322,7 +322,7 @@ function addTruck(scene: THREE.Scene): THREE.Group {
   const chassis = standard(palette.graphite, 0.34, 0.72);
   const body = standard(palette.ivory, 0.26, 0.62);
   const silver = standard(palette.silver, 0.22, 0.88);
-  const teal = standard(palette.teal, 0.25, 0.68);
+  const teal = standard(0xf9a521, 0.25, 0.68);
   const copper = standard(palette.copper, 0.27, 0.64);
   const glass = new THREE.MeshPhysicalMaterial({
     color: palette.glass,

@@ -11,3 +11,5 @@
 - [x] Support offline core workflows with local state and single-file bundled code/assets/fonts. PWA manifest and production service worker precache all compiled lazy chunks after initial access. Native iOS binary/public deployment is not claimed.
 - [x] Type/build checks passed. One read-only implementation review completed; confirmed cross-application draft, search selection and storage-reset issues corrected. Focused actual app checks passed: no page errors or mobile horizontal overflow, business filter, opportunity dialog, policy review and new application dialog.
 - [x] Final single-file smoke check passed with networking disabled: opportunity creation and reload persistence, credit review, zero page errors and no mobile horizontal overflow. The delivered HTML embeds code, styles, fonts and logo in one file.
+
+- [x] User-requested brand correction: replace creative pine/sage with verified official-site navy/white for Aircraft and amber/charcoal for Asset, including the original subsidiary logo. Match the video to the corrected app.

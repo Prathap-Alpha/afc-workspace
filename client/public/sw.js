@@ -1,11 +1,11 @@
-const CACHE = 'afc-shell-v1';
+const CACHE = 'afc-shell-brand-v2';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
     const response = await fetch('/offline-assets.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Offline asset list unavailable');
     const assets = await response.json();
-    await cache.addAll(['/', '/manifest.webmanifest', '/afc-logo.png', '/favicon.svg', '/app-icon-192.png', '/app-icon-512.png', ...assets]);
+    await cache.addAll(['/', '/manifest.webmanifest', '/afc-logo.png', '/asset-logo.png', '/favicon.svg', '/app-icon-192.png', '/app-icon-512.png', ...assets]);
     await self.skipWaiting();
   })());
 });

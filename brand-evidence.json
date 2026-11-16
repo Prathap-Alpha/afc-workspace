@@ -1,0 +1,17 @@
+{
+  "aircraft": {
+    "website": "https://airfincorp.co.za/",
+    "navy": "#010c26",
+    "white": "#ffffff",
+    "evidence": "Computed background of .fusion-secondary-header and a.fusion-button is rgb(1,12,38); button foreground white; original logo source confirmed by DOM",
+    "logo": "https://airfincorp.co.za/wp-content/uploads/2023/03/wide_white-default.png?x71778"
+  },
+  "asset": {
+    "website": "https://assetfincorp.co.za/",
+    "amber": "#f9a521",
+    "charcoal": "#2f2f2f",
+    "evidence": "Computed #ctabutton and footer top border rgb(249,165,33); #footer background rgb(47,47,47)",
+    "logo": "https://assetfincorp.co.za/wp-content/uploads/2024/02/Asset-fin-corp_Logo-2023_-02.png"
+  },
+  "note": "These are verified current website colours, not a separately provided formal brand manual. Do not claim guessed turquoise as official."
+}
